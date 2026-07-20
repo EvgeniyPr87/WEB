@@ -25,7 +25,12 @@ figcaption
 aside
 {
     font-style:italic;
+    color:gray;
     font-size:16px;
+    border-left:3px solid #808080;
+    padding-left:15px;
+    margin: 20px 0px;
+
 }
 
 ol
@@ -39,4 +44,14 @@ ol ol /* В конструкцию вложенна другая констру�
 ol ul
 {
     list-style:none;
+}
+.menu-link
+{
+    color:black;
+    text-decoration:none;
+}
+.menu-link;hover
+{
+    color: blue;
+    text-decoration: underline;
 }
