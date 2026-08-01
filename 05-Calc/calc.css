@@ -10,12 +10,14 @@
     width:400px;
     height:300px;
     font-family:Tahoma;
+    font-size:18px;
    
 }
 
 .title-bar
 {
-    height:38px;
+    
+    height:36px;
     background-color:blue;
     color:white;
     text-shadow:1px 1px 2px gray;
@@ -43,9 +45,14 @@
 }
 .title-bar img
 {
-    width:32px;
-    height:32px;
+    width:28px;
+    height:28px;
 
+}
+.icon-and-title div
+{
+ position:relative;
+ right:-6px;
 }
 .window-control-buttons
 {
@@ -56,17 +63,81 @@
     height:24px;
     background-color: rgb(4, 143, 220);
     color: white;
-    border: solid 1px white;
-    border-radius: 4px;
+    border: solid 1px rgb(72, 197, 225);
+    border-radius: 6px;
     box-shadow: inset 3px 1px 7px 0px #2288FF, 
                 inset -2px -1px 5px  0px #0000BB;
     font-size:18px;
+   
     
 }
+.control-button div
+{
+    position:relative;
+    left:-4px;
+    top:-4px;
+    /*margin-left:-4px;
+    margin-top:-4px;*/
+}
+.close-button
+{
+    position:relative;
+    left:0px;
+    top:0px;
+
+
+}
+.close-button {
+    background-color: rgb(220,77,58);
+    box-shadow: inset 2px 1px 7px 0px #FF8888,
+        inset -2px -1px 5px 0px #770000;
+}
+.control-button:hover
+{
+    background-image:linear-gradient(
+        to bottom right,
+    rgb(189,189,249), 
+    rgb(39,104,249),
+    rgb(149,149,249)
+    );
+}
+.control-button:active {
+    /*  background-image:none;*/
+    background-color: rgb(50,50,200);
+    box-shadow: 
+        inset -3px 1px 7px 0px #2288FF, 
+        inset 4px 2px 5px 0px #0000BB;
+}
+.close-button:hover
+{
+
+
+
+}
+.close-button:active
+{
+
+}
+
+.control-button[disabled], .control-button[disabled]:hover, .control-button[disabled]:active {
+    background-image:none;
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+    background-color: #2768E8;
+    box-shadow: 
+                inset 3px 1px 7px 0px #2288FF,
+                inset -2px -1px 5px 0px #0000BB;
+}
+
+
 
 
 .client-rect
 {
     background-color:rgb(235, 233, 216);
     height:262px;
+
+    border:solid 5px;
+    border-top:0px;
+    border-image:linear-gradient(to right, blue, darkblue) 1;
 }
