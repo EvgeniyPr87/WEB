@@ -1,0 +1,72 @@
+﻿body
+{
+      background-image:url("bliss.jpg");
+      background-size:cover;
+      /*background-repeat:no-repeat;*/
+      /*background-attachment:fixed;*/
+}
+.main-window
+{
+    width:400px;
+    height:300px;
+    font-family:Tahoma;
+   
+}
+
+.title-bar
+{
+    height:38px;
+    background-color:blue;
+    color:white;
+    text-shadow:1px 1px 2px gray;
+
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+
+    background-image:linear-gradient(
+        to bottom,
+    rgb(169, 229, 247),
+    rgb(4, 143, 220),
+    rgb(4, 143, 220),
+    rgb(6, 100, 142)
+        );
+    box-shadow:inset -2px 0p 8px 0px darkblue;
+
+
+}
+.title-bar, .icon-and-title
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.title-bar img
+{
+    width:32px;
+    height:32px;
+
+}
+.window-control-buttons
+{
+    margin:8px;
+}
+.control-button {
+    width: 24px;
+    height:24px;
+    background-color: rgb(4, 143, 220);
+    color: white;
+    border: solid 1px white;
+    border-radius: 4px;
+    box-shadow: inset 3px 1px 7px 0px #2288FF, 
+                inset -2px -1px 5px  0px #0000BB;
+    font-size:18px;
+    
+}
+
+
+.client-rect
+{
+    background-color:rgb(235, 233, 216);
+    height:262px;
+}
